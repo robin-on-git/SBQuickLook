@@ -25,6 +25,12 @@ extension SBQuickViewController: QLPreviewControllerDelegate {
     }
 
     public func previewControllerDidDismiss(_ controller: QLPreviewController) {
-        dismiss(animated: false)
+//        dismiss(animated: false)
+    }
+    
+    public func previewControllerWillDismiss(_ controller: QLPreviewController) {
+//        UIView.animate(withDuration: 0.4) {
+//            controller.view.alpha = 0
+//        }
     }
 }
